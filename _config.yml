@@ -1,0 +1,74 @@
+# ---------------------------------------------------------------------------
+# Samskrita Bharati New Zealand - site configuration
+# ---------------------------------------------------------------------------
+# This file holds site-wide settings. After editing it you must commit the
+# change for the live site to rebuild (GitHub does this automatically).
+# ---------------------------------------------------------------------------
+
+title: Samskrita Bharati New Zealand
+tagline: "Sanskrit, spoken and alive - in Aotearoa"
+description: >-
+  A volunteer community teaching Samskritam (Sanskrit) as a living, spoken
+  language across New Zealand - online and in person. No prior knowledge needed.
+email: samskritabharatinz@gmail.com
+
+# ---------------------------------------------------------------------------
+# URL settings. Leave both blank while testing.
+#
+#   - If your repository is named  <account>.github.io  the site serves at the
+#     root, so leave baseurl blank ("").
+#   - If your repository has any other name (a "project" repo), set:
+#         baseurl: "/your-repo-name"
+#   - When you go live on your own domain, set:
+#         url: "https://samskritabharatinz.org"
+#         baseurl: ""
+# ---------------------------------------------------------------------------
+url: ""
+baseurl: ""
+
+lang: en-NZ
+
+# ---------------------------------------------------------------------------
+# Navigation menu. To add a page to the top menu, add a line here.
+# To remove a page from the menu, delete its line (the page still exists).
+# ---------------------------------------------------------------------------
+nav:
+  - title: About
+    url: /about/
+  - title: Learn
+    url: /learn/
+  - title: Events
+    url: /events/
+  - title: Blog
+    url: /blog/
+  - title: Links
+    url: /links/
+  - title: Contact
+    url: /contact/
+
+# Social / contact links shown in the footer. Blank ones are hidden.
+social:
+  facebook: "https://www.facebook.com/SamskritaBharatiNZ"
+  youtube: ""
+  email: samskritabharatinz@gmail.com
+
+# ---------------------------------------------------------------------------
+# Build settings - you should not need to touch anything below this line.
+# ---------------------------------------------------------------------------
+markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Blog posts get clean URLs like /blog/2026/welcome/
+permalink: /blog/:year/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache

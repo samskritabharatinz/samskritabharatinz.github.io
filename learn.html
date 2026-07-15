@@ -1,0 +1,31 @@
+---
+layout: page
+title: Learn Sanskrit
+eyebrow: Classes
+permalink: /learn/
+---
+
+<p class="lede">Our teaching starts with spoken Sanskrit and moves step by step to reading classical texts. You can begin with no prior knowledge at all - everyone starts at Sambhashana.</p>
+
+<div class="cards" style="margin: 1.8rem 0 2.4rem;">
+  {%- for c in site.data.classes -%}
+    <div class="card">
+      <div class="eyebrow">{{ c.tag }}{% unless c.current %} &middot; not running just now{% endunless %}</div>
+      <h3>{{ c.name }}</h3>
+      <p>{{ c.desc }}</p>
+    </div>
+  {%- endfor -%}
+</div>
+
+<h2>How to register</h2>
+<p>
+  New beginner courses start each term. To register your interest, or to ask
+  which level suits you, write to us at
+  <a href="mailto:{{ site.email }}?subject=Class%20registration">{{ site.email }}</a>
+  with your name and mobile number, and we will be in touch with dates, times,
+  and joining details.
+</p>
+
+<p style="margin-top:1.4rem;">
+  <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Class%20registration">Email us to register</a>
+</p>

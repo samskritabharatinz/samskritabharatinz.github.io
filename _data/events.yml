@@ -1,0 +1,22 @@
+# ===========================================================================
+# UPCOMING EVENTS
+# ===========================================================================
+# This is the file you will edit most often. Each event is four lines.
+# To add an event, copy a block below and change the values.
+# To remove an event, delete its block. Keep the dash and the indentation.
+#
+#   month:   short month, e.g. Aug, Sep, Oct
+#   day:     day of the month in quotes, e.g. "01", "21"
+#   title:   the event name
+#   detail:  where / when, one short line
+# ===========================================================================
+
+- month: "Oct"
+  day: "01"
+  title: "Samskrita Sambhashana - spoken Sanskrit"
+  detail: "Online - short course begins"
+
+- month: "Nov"
+  day: "01"
+  title: "Pravesha - new batch begins"
+  detail: "Online - register your interest"

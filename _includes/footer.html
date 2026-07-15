@@ -1,0 +1,23 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-about">
+      <div class="foot-org">Samskrita Bharati New Zealand</div>
+      <p class="foot-blurb">
+        A not-for-profit charitable trust run by volunteers. We belong to the
+        global network of Samskrita Bharati organisations. Our purpose is to
+        promote, preserve and practise Samskritam (Sanskrit) language and its
+        knowledge systems in New Zealand, through classes, discussions, and
+        workshops, both online and in person.
+      </p>
+      <!-- Charity registration number can be added here once available. -->
+    </div>
+    <div class="foot-contact">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <div class="footer-social">
+        {%- if site.social.email -%}<a href="mailto:{{ site.social.email }}" aria-label="Email">&#9993;</a>{%- endif -%}
+        {%- if site.social.facebook -%}<a href="{{ site.social.facebook }}" aria-label="Facebook">f</a>{%- endif -%}
+        {%- if site.social.youtube -%}<a href="{{ site.social.youtube }}" aria-label="YouTube">&#9658;</a>{%- endif -%}
+      </div>
+    </div>
+  </div>
+</footer>

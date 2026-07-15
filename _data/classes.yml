@@ -1,0 +1,35 @@
+# ===========================================================================
+# CLASSES / LEVELS  (drives the Learn page)
+# ===========================================================================
+# Please check and correct the descriptions so they match what SBNZ offers.
+#
+#   name:     the level name
+#   tag:      a short label
+#   desc:     one or two sentences
+#   current:  true if running now, false if not currently offered
+# ===========================================================================
+
+- name: "Sambhashana"
+  tag: "Start here"
+  current: true
+  desc: "Spoken Sanskrit for absolute beginners. You converse from your very first class - no reading or grammar needed to begin. This is the entry point to all our courses."
+
+- name: "Pravesha"
+  tag: "Course - level 1"
+  current: true
+  desc: "The first written level. Builds reading, writing, and a working vocabulary alongside conversation, over 6 to 9 months via Zoom."
+
+- name: "Parichaya"
+  tag: "Course - level 2"
+  current: false
+  desc: "Deepens grammar and comprehension, moving from everyday speech towards simple texts."
+
+- name: "Shiksha"
+  tag: "Course - level 3"
+  current: false
+  desc: "Structured grammar and reading of graded passages, developing real fluency."
+
+- name: "Kovida"
+  tag: "Course - level 4"
+  current: false
+  desc: "Advanced study of grammar and classical literature. On completing this level you can begin reading Sanskrit literature on your own."

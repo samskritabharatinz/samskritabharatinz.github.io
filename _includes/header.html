@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="brand-logo" src="{{ '/assets/images/sbnz-logo.png' | relative_url }}" alt="Samskrita Bharati New Zealand">
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o);this.setAttribute('aria-label',o?'Close menu':'Open menu');">&#9776;</button>
+
+    <nav class="nav" id="nav">
+      {%- for item in site.nav -%}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {%- endfor -%}
+      <a class="btn btn-primary" href="{{ '/learn/' | relative_url }}">Join a class</a>
+    </nav>
+  </div>
+</header>

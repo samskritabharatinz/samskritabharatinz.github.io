@@ -1,0 +1,65 @@
+---
+layout: default
+title: Home
+description: The New Zealand chapter of Samskrita Bharati - teaching spoken Sanskrit online and in person, for everyone. No prior knowledge needed.
+---
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">Kia ora &nbsp;&middot;&nbsp; <span class="deva">स्वागतम्</span> &nbsp;&middot;&nbsp; Welcome</div>
+    <h1>Sanskrit in Aotearoa</h1>
+    <p>The New Zealand chapter of Samskrita Bharati, the worldwide movement to keep Samskritam a living, spoken language. Classes for everyone, online and in person - no prior experience needed.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/learn/' | relative_url }}">Register for a class</a>
+      <a class="btn btn-ghost" href="{{ '/about/' | relative_url }}">Our story</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow">What we do</div>
+      <h2>Ways to learn and take part</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon" aria-hidden="true">&#128172;</div>
+        <h3>Sambhashana</h3>
+        <p>Spoken Sanskrit for beginners - the place to start, with no experience needed.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">&#128214;</div>
+        <h3>Pravesha</h3>
+        <p>The first of the four-level written course in reading, writing, and grammar.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">&#128218;</div>
+        <h3>Continuing study</h3>
+        <p>Parichaya, Shiksha, and Kovida, for those going further with the language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="subhashita">
+  <p class="verse deva">आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।<br>
+  सब्रह्मचारिभ्यः पादं पादं कालक्रमेण च ॥</p>
+  <p class="gloss">A quarter of learning is from a teacher,<br>
+  a quarter by the student's own intellect,<br>
+  a quarter from fellow learners,<br>
+  and the rest through the course of time.</p>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Diary</div>
+      <h2>Upcoming</h2>
+    </div>
+    {%- for event in site.data.events -%}
+      {%- include event-card.html event=event -%}
+    {%- endfor -%}
+    <p style="margin-top:1.4rem;"><a href="{{ '/events/' | relative_url }}">See all events &rarr;</a></p>
+  </div>
+</section>

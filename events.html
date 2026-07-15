@@ -1,0 +1,24 @@
+---
+layout: page
+title: Events
+eyebrow: Diary
+permalink: /events/
+---
+
+<p class="lede">Classes, camps, and gatherings coming up. Everyone is welcome.</p>
+
+<div style="margin-top: 1.6rem;">
+  {%- if site.data.events and site.data.events.size > 0 -%}
+    {%- for event in site.data.events -%}
+      {%- include event-card.html event=event -%}
+    {%- endfor -%}
+  {%- else -%}
+    <p>No events are scheduled just now. Please check back soon, or
+    <a href="mailto:{{ site.email }}">write to us</a> to be added to our mailing list.</p>
+  {%- endif -%}
+</div>
+
+<p style="margin-top: 2rem;">
+  To hear about new classes and events, email
+  <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+</p>
