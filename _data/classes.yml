@@ -1,35 +1,58 @@
 # ===========================================================================
 # CLASSES / LEVELS  (drives the Learn page)
 # ===========================================================================
-# Please check and correct the descriptions so they match what SBNZ offers.
+# To ADD a new course, copy a whole block below and change the values.
+# To UPDATE a start date, change the "next:" line only.
 #
-#   name:     the level name
-#   tag:      a short label
-#   desc:     one or two sentences
-#   current:  true if running now, false if not currently offered
+#   name     the level name shown on the card
+#   tag      a short label above the name
+#   current  true if running now, false if not currently offered
+#   next     the start-date line shown on the card - edit this often
+#   subject  the subject line put into the registration email
+#   image    file name inside assets/images/levels/  (leave out for a
+#            text-only card - see "deva" and "deva_top" below)
+#   deva     large Devanagari word, used only when there is no image
+#   deva_top small Devanagari line above it, used only when no image
+#   desc     one or two sentences
 # ===========================================================================
 
 - name: "Sambhashana"
   tag: "Start here"
   current: true
-  desc: "Spoken Sanskrit for absolute beginners. You converse from your very first class - no reading or grammar needed to begin. This is the entry point to all our courses."
+  next: "Next Shibiram begins 1 September"
+  subject: "Registration Sambhashana"
+  deva: "सम्भाषणम्"
+  deva_top: "सम्भाषणद्वारा संस्कृतम्"
+  desc: "Spoken Sanskrit for absolute beginners. You converse from your very first class - no reading or grammar needed to begin. This is free, and it is the entry point to all our courses."
 
 - name: "Pravesha"
   tag: "Course - level 1"
   current: true
+  next: "Ongoing - Wednesdays, 8pm. Next course 25 January 2027"
+  subject: "Registration Pravesha"
+  image: "pravesha.jpg"
   desc: "The first written level. Builds reading, writing, and a working vocabulary alongside conversation, over 6 to 9 months via Zoom."
 
 - name: "Parichaya"
   tag: "Course - level 2"
   current: false
-  desc: "Deepens grammar and comprehension, moving from everyday speech towards simple texts."
+  next: "Depends on numbers - register your interest"
+  subject: "Registration Parichaya"
+  image: "parichaya.jpg"
+  desc: "Deepens grammar and comprehension, moving from everyday speech towards simple texts. Tenses and moods, vowel sandhi, and an introduction to Samskrit literature."
 
 - name: "Shiksha"
   tag: "Course - level 3"
   current: false
-  desc: "Structured grammar and reading of graded passages, developing real fluency."
+  next: "Depends on numbers - register your interest"
+  subject: "Registration Shiksha"
+  image: "shiksha.jpg"
+  desc: "Structured grammar and the reading of graded passages, developing real fluency."
 
 - name: "Kovida"
   tag: "Course - level 4"
   current: false
-  desc: "Advanced study of grammar and classical literature. On completing this level you can begin reading Sanskrit literature on your own."
+  next: "Depends on numbers - register your interest"
+  subject: "Registration Kovida"
+  image: "kovida.jpg"
+  desc: "Advanced study of grammar and classical literature. On completing this level you can begin reading Samskrit literature on your own."

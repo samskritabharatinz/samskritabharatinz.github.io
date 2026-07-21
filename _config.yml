@@ -49,7 +49,7 @@ nav:
 # Social / contact links shown in the footer. Blank ones are hidden.
 social:
   facebook: "https://www.facebook.com/SamskritaBharatiNZ"
-  youtube: ""
+  # youtube: ""   # add a URL here to show a YouTube icon in the footer
   email: samskritabharatinz@gmail.com
 
 # ---------------------------------------------------------------------------
