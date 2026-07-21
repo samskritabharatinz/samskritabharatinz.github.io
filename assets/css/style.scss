@@ -95,10 +95,27 @@ p { margin: 0 0 1rem; }
   display: flex; align-items: center; justify-content: space-between;
   gap: 1rem; padding-top: .85rem; padding-bottom: .85rem;
 }
-.brand { display: inline-flex; align-items: center; }
+.brand { display: inline-flex; align-items: center; gap: .85rem; }
 .brand:hover { text-decoration: none; }
-.brand-logo { height: 58px; width: auto; }
-@media (max-width: 760px) { .brand-logo { height: 48px; } }
+.brand-logo { height: 74px; width: auto; flex: 0 0 auto; }
+.brand-words { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-name {
+  font-family: var(--font-serif); font-weight: 600; font-size: 1.32rem;
+  color: var(--green-dark); letter-spacing: -0.01em;
+}
+.brand-sub {
+  font-size: .78rem; color: var(--gold-deep); letter-spacing: .16em;
+  text-transform: uppercase; margin-top: .18rem;
+}
+@media (max-width: 980px) {
+  .brand-logo { height: 60px; }
+  .brand-name { font-size: 1.1rem; }
+  .brand-sub { font-size: .68rem; letter-spacing: .12em; }
+}
+@media (max-width: 420px) {
+  .brand-logo { height: 52px; }
+  .brand-name { font-size: 1rem; }
+}
 
 .nav { display: flex; align-items: center; gap: 1.35rem; }
 .nav a { color: var(--ink); font-size: .96rem; }
@@ -119,12 +136,8 @@ p { margin: 0 0 1rem; }
 .hero-text h1 { color: var(--green-dark); font-size: 2.3rem; }
 .hero-text p { color: #35473F; max-width: 30rem; }
 .hero-actions { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.4rem; }
-.hero-media {
-  background: var(--gold-tint);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--gold-deep); text-align: center; min-height: 260px; padding: 2rem;
-}
-.hero-media .ph-label { font-size: .85rem; margin-top: .5rem; }
+.hero-media { background: var(--gold-tint); overflow: hidden; min-height: 300px; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* --- Generic section ------------------------------------------------------ */
 .section { padding: 3rem 0; }
@@ -194,6 +207,7 @@ p { margin: 0 0 1rem; }
 .foot-about { max-width: 36rem; }
 .foot-org { font-family: var(--font-serif); color: #F3E7C6; font-size: 1.05rem; margin-bottom: .5rem; }
 .foot-blurb { font-size: .86rem; line-height: 1.65; color: #CBDAD2; margin: 0; }
+.foot-reg { font-size: .8rem; color: #9DB6AC; margin: .6rem 0 0; letter-spacing: .02em; }
 .foot-contact { text-align: right; font-size: .9rem; }
 .footer-social { display: flex; gap: 1rem; font-size: 1.2rem; justify-content: flex-end; margin-top: .6rem; }
 @media (max-width: 640px) { .foot-contact { text-align: left; } .footer-social { justify-content: flex-start; } }

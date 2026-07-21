@@ -1,7 +1,11 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <img class="brand-logo" src="{{ '/assets/images/sbnz-logo.png' | relative_url }}" alt="Samskrita Bharati New Zealand">
+      <img class="brand-logo" src="{{ '/assets/images/sbnz-logo.png' | relative_url }}" alt="">
+      <span class="brand-words">
+        <span class="brand-name">Samskrita Bharati</span>
+        <span class="brand-sub">New Zealand</span>
+      </span>
     </a>
 
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o);this.setAttribute('aria-label',o?'Close menu':'Open menu');">&#9776;</button>
