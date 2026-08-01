@@ -6,5 +6,12 @@
   <div class="event-body">
     <h3>{{ include.event.title }}</h3>
     <p>{{ include.event.detail }}</p>
+    {%- if include.event.image -%}
+      <p><img src="{{ include.event.image | relative_url }}" alt="{{ include.event.title }}"
+              style="max-width:340px;width:100%;border-radius:8px;margin:.4rem 0;"></p>
+    {%- endif -%}
+    {%- if include.event.link -%}
+      <p><a class="btn btn-primary btn-sm" href="{{ include.event.link }}">{{ include.event.link_text | default: 'Register' }}</a></p>
+    {%- endif -%}
   </div>
 </div>
